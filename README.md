@@ -1,0 +1,2 @@
+# aide-example
+register && login
