@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="REGISTER PAGE"
+		android:textSize="25sp"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/regisTextView1"
+		android:layout_marginTop="10dp"
+		android:textColor="#FF0000"
+		android:textStyle="bold"/>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/regisTextView1">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="50dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Username :"
+				android:textSize="18sp"
+				android:textColor="#FF0000"
+				android:textStyle="bold"
+				android:layout_marginLeft="8dp"/>
+
+			<EditText
+				android:layout_width="wrap_content"
+				android:ems="10"
+				android:layout_height="wrap_content"
+				android:id="@+id/edit_newUser"
+				android:textSize="18sp"
+				android:textColor="#000000"
+				android:singleLine="true"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Password :"
+				android:textSize="18sp"
+				android:textColor="#FF0000"
+				android:textStyle="bold"
+				android:layout_marginLeft="11dp"/>
+
+			<EditText
+				android:layout_width="wrap_content"
+				android:ems="10"
+				android:layout_height="wrap_content"
+				android:id="@+id/edit_newPass"
+				android:textSize="18sp"
+				android:textColor="#000000"
+				android:singleLine="true"
+				android:inputType="textPassword"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/check_newPass"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Confirm password :"
+				android:textSize="18sp"
+				android:textColor="#FF0000"
+				android:textStyle="bold"
+				android:layout_marginLeft="5dp"/>
+
+			<EditText
+				android:layout_width="wrap_content"
+				android:ems="7"
+				android:layout_height="wrap_content"
+				android:id="@+id/edit_confirm"
+				android:textSize="18sp"
+				android:textColor="#000000"
+				android:singleLine="true"
+				android:inputType="textPassword"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/check_confirm"/>
+
+		</LinearLayout>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="register"
+			android:id="@+id/button_regis"
+			android:textSize="18sp"
+			android:layout_gravity="center"
+			android:layout_marginTop="30dp"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Example App AIDE"
+		android:textSize="30sp"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/mainTextView1"
+		android:textColor="#000CFF"
+		android:textStyle="bold"
+		android:layout_marginTop="5dp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Aide Example 1"
+		android:layout_below="@id/mainTextView1"
+		android:textSize="30sp"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/mainTextView2"
+		android:layout_marginTop="20dp"
+		android:textColor="#000CFF"
+		android:textStyle="bold"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Register &amp;&amp; Login"
+		android:layout_below="@id/mainTextView2"
+		android:textSize="30sp"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="30dp"
+		android:textColor="#FF0000"
+		android:textStyle="bold"
+		android:id="@+id/mainTextView3"/>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/mainTextView3">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="LOGIN PAGE"
+			android:textSize="25sp"
+			android:textColor="#FF0000"
+			android:textStyle="bold"
+			android:layout_gravity="center"
+			android:layout_marginTop="20dp"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="30dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Username :"
+				android:textSize="18sp"
+				android:textColor="#FF0000"
+				android:textStyle="bold"
+				android:layout_marginLeft="12dp"/>
+
+			<EditText
+				android:layout_width="wrap_content"
+				android:ems="10"
+				android:layout_height="wrap_content"
+				android:id="@+id/edit_user"
+				android:textSize="18sp"
+				android:textColor="#000000"
+				android:singleLine="true"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Password :"
+				android:textSize="18sp"
+				android:textColor="#FF0000"
+				android:textStyle="bold"
+				android:layout_marginLeft="15dp"/>
+
+			<EditText
+				android:layout_width="wrap_content"
+				android:ems="10"
+				android:layout_height="wrap_content"
+				android:id="@+id/edit_pass"
+				android:textSize="18sp"
+				android:textColor="#000000"
+				android:singleLine="true"
+				android:inputType="textPassword"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/check_pass"/>
+
+		</LinearLayout>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="login"
+			android:id="@+id/button_login"
+			android:textSize="18sp"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="20dp"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="&gt;&gt; Register NewAccount &lt;&lt;"
+			android:textSize="25sp"
+			android:textStyle="bold"
+			android:textColor="#F6FF00"
+			android:background="#0006FF"
+			android:id="@+id/text_regis"
+			android:layout_marginTop="30dp"
+			android:gravity="center"
+			android:textColorLink="#F6FF00"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+
